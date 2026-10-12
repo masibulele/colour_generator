@@ -1,0 +1,145 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#83a8df,#c3cfe2);
+    padding: 2rem;
+}
+
+.container{
+    background: #fff;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+}
+.title{
+    text-align: center;
+    color: #333;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.title::after{
+    content: "";
+    background-color: #667eea;
+    height: 3px;
+    width: 50%;
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.generate-btn{
+    background:linear-gradient(135deg,#667eea,#764ba2) ;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+    transition: all ease 0.3s;
+
+}
+
+.generate-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+.generate-btn:active{
+    transform: translateY(0px);
+
+    
+}
+
+.colour-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+
+}
+
+.colour-box-container{
+   
+    box-shadow: 0 4px 2px rgba(0,0,0,0.3);
+    transition: all ease 0.2s;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    overflow: hidden;
+   
+   
+
+}
+
+.colour-box-container:hover{
+    transform: translateY(-5px);
+}
+
+.colour-box{
+    height: 100px;
+    cursor: pointer;
+   
+}
+
+#box-1{
+    background-color: #c7522a;
+}
+#box-2{
+    background-color: #008585;
+
+}
+
+#box-3{
+    background-color:#74a892;
+
+}
+
+#box-4{
+    background-color:#fbf2c4 ;
+}
+#box-5{
+    background-color: #e5c185;
+}
+
+.colour-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+}
+
+.copy-btn{
+    background: none;
+    border: none;
+    transition: all ease 0.2s;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.copy-btn:hover{
+    transform: translateY(-2px);
+    color: #fbf2c4;
+}
+
+
+@media (max-width: 768px) {
+    .colour-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+
+}
+}
